@@ -1,6 +1,6 @@
 # HP 3478A TFT display upgrade - STM32 BluePill + LT7680A-R + 240x960 TFT
 
-![3478A TFT display upgrade](https://raw.githubusercontent.com/Ian-Johnston/3478A_VS_Display/master/Photos/3478A.jpg)
+![3478A TFT display upgrade](Photos/3478A.jpg)
 
 This is the **Visual Studio Code** version (VS Code + CMake + GNU Arm Embedded Toolchain) of the original **Visual Studio 2022 / VisualGDB** project: [3478A_VS_Display](https://github.com/Ian-Johnston/3478A_VS_Display)
 
