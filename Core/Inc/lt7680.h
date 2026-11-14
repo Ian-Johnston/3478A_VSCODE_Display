@@ -23,22 +23,27 @@ uint8_t ReadStatus(void);
 uint8_t ReadData(void);
 void WriteDataToRegister(uint8_t reg, uint8_t value);
 
+// Busy / FIFO checks (Status Register)
+void WaitForLT7680Ready(void);              // core idle (STSR bit3 = 0)
+void WaitForLT7680WriteFifoNotFull(void);   // write FIFO not full (STSR bit7 = 0)
+void WaitForLT7680WriteComplete(void);      // write FIFO empty (bit6 = 1) then core idle
+
 // Testing routines
 //void OriginalFillSDRAM_LT(void);
 //void BootClearToRed(void);
 //void ClearSDRAM_LT(uint16_t color);
 //void FillSDRAM_LT(uint16_t color);
-void FillSDRAM(unsigned short color);
-void TEST_Fill_initiate(void);
-void TEST_SDRAM_Fill_LT(uint32_t startAddress, uint32_t length, uint16_t color);
-void ClearSDRAM(void);
-void SetActiveWindowFullScreen(void);
+//void FillSDRAM(unsigned short color);
+//void TEST_Fill_initiate(void);
+//void TEST_SDRAM_Fill_LT(uint32_t startAddress, uint32_t length, uint16_t color);
+//void ClearSDRAM(void);
+//void SetActiveWindowFullScreen(void);
 //void FastClearWithBTE(uint16_t color);
-void FillSDRAMWithColor(void);
-void DrawSmallSquare(void);
-void WriteSinglePixel(void);
-void FillSDRAMWithColorIntegrated(void);
-void FillDisplayRAM(void);
+//void FillSDRAMWithColor(void);
+//void DrawSmallSquare(void);
+//void WriteSinglePixel(void);
+//void FillSDRAMWithColorIntegrated(void);
+//void FillDisplayRAM(void);
 
 // LT7680 Commands and Configuration
 void SoftwareReset(void);
@@ -53,6 +58,22 @@ void SetTextColors(uint32_t foreground, uint32_t background);
 //void DrawText(char* text);
 //void ConfigureFontAndPosition(uint8_t fontSource, uint8_t characterHeight, uint8_t isoCoding, uint8_t fullAlignment, uint8_t chromaKeying, uint8_t rotation, uint8_t widthFactor, uint8_t heightFactor, uint8_t lineGap, uint8_t charSpacing, uint16_t cursorX, uint16_t cursorY)
 
+void ConfigureFontAndPosition(
+    uint8_t fontSource,
+    uint8_t characterHeight,
+    uint8_t isoCoding,
+    uint8_t fullAlignment,
+    uint8_t chromaKeying,
+    uint8_t rotation,
+    uint8_t widthFactor,
+    uint8_t heightFactor,
+    uint8_t lineGap,
+    uint8_t charSpacing,
+    uint16_t cursorX,
+    uint16_t cursorY
+);
+
+
 // Register Configuration
 void LT7680_PLL_Initial_LT(void);
 void Configure_Main_PIP_Window_LT(void);
@@ -66,11 +87,11 @@ void LCD_HSYNC_Pulse_Width_LT(uint16_t val);
 void LCD_Vertical_Non_Display_LT(uint16_t val);
 void LCD_VSYNC_Start_Position_LT(uint16_t val);
 void LCD_VSYNC_Pulse_Width_LT(uint16_t val);
-void LCDConfig_LT(void);
-void LCDTurnOn_LT(void);
-void PWM_Prescaler_LT(void);
-void PWM_Clock_Mux_LT(void);
-void PWM_Configuration_LT(void);
+//void LCDConfig_LT(void);
+//void LCDTurnOn_LT(void);
+//void PWM_Prescaler_LT(void);
+//void PWM_Clock_Mux_LT(void);
+//void PWM_Configuration_LT(void);
 void Software_Reset_LT(void);
 void Software_ResetPLL_LT(void);
 void Set_MISA_LT(void);
@@ -84,6 +105,9 @@ void SetGraphicRWYCoordinate_LT(void);
 void SetCanvasStartAddress_LT(void);
 void SetCanvasImageWidth_LT(void);
 //void ClearScreen(void);
+//void DrawText(const char* text);
+
+
 
 // Pin definitions for LT7680 controller
 // The SCK, MOSI, MISO, and CS pins are defined and configured as part of the SPI peripheral initialization in the STM32 HAL driver setup.
@@ -142,7 +166,7 @@ void SetCanvasImageWidth_LT(void);
 
 // User
 #define DISP_TEST				0			// Display the LT7680 test card: 1 = test card, 0 = normal operation
-#define BACKLIGHTFULL			10			// Backlighting brightness 0-100%
+#define BACKLIGHT   			10			// Backlighting brightness 0-100%
 #define BACKLIGHTOFF			0			// Backlighting brightness 0-100%
 
 #endif

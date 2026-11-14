@@ -62,7 +62,7 @@ void SetTimerDuration(uint16_t ms) {
 
 
 //***********************************************************************************
-// Timer 3 - 3457A Input Capture Functionality
+// Timer 3 - 3478A Input Capture Functionality
 
 /* Buffers for Data Capture */
 #define MAX_BUFFER_SIZE 256
@@ -155,10 +155,10 @@ volatile uint8_t  lastRegC[6];
 volatile uint16_t lastCmdAtRegC = 0;
 volatile uint32_t regCNonZeroWrites = 0;
 volatile uint8_t dbgCode[12];
-static uint8_t HP3457_GetCharCode(uint8_t d);
-static uint8_t HP3457_GetPunct(uint8_t d);
+static uint8_t HP3478_GetCharCode(uint8_t d);
+static uint8_t HP3478_GetPunct(uint8_t d);
 volatile uint8_t dbgCode_alt[12];
-static uint8_t HP3457_GetCharCode_Alt(uint8_t d);
+static uint8_t HP3478_GetCharCode_Alt(uint8_t d);
 volatile char displayStr[13];       // 12 chars + \0
 volatile char punctStr[13];         // punctuation per digit + \0
 volatile char displayWithPunct[32]; // debug/combined string + \0
@@ -166,6 +166,8 @@ volatile uint8_t Annunc[13];   // use indices 1..12, ignore 0
 volatile uint8_t dbg_char8 = 0;
 volatile uint8_t dbg_char8_mapped = 0;
 volatile uint8_t dbg_after_build = 0;
+volatile uint8_t dpFarRight = 0;     // 1 when the far-right DP is ON this frame
+
 
 //*************************
 //volatile uint8_t dbgCode[12];
@@ -348,7 +350,11 @@ void DMM_HandleO2Clock(void)
                         finishedTarget == 2 ||
                         finishedTarget == 3) {
                         //DecodeAllDigits();
-                        HP3457_BuildDisplayString(displayStr, punctStr);
+                        HP3478_BuildDisplayString(displayStr, punctStr);
+
+                        // Capture far-right decimal point (digit 12, index 11).
+                        // This is the one that flashes on trigger.
+                        dpFarRight = (punctStr[11] == '.') ? 1u : 0u;
 
 
                         dbg_after_build = 1;                          // marker: we reached here
@@ -367,13 +373,13 @@ void DMM_HandleO2Clock(void)
 
                         for (int i = 0; i < 12; i++) {
                             uint8_t d = (uint8_t)(i + 1);   // because we now build display left-to-right with d=1..12
-                            dbgCode[i] = HP3457_GetCharCode(d);
+                            dbgCode[i] = HP3478_GetCharCode(d);
                         }
 
 
                         for (int i = 0; i < 12; i++) {
                             uint8_t d = (uint8_t)(i + 1);
-                            dbgCode_alt[i] = HP3457_GetCharCode_Alt(d);
+                            dbgCode_alt[i] = HP3478_GetCharCode_Alt(d);
                         }
 
                         frameReady = 1;
@@ -643,7 +649,7 @@ static void ExtractRegANibbles(void)
 
 
 // Returns 7-bit HP char code (0..127) for digit number d = 1..12
-static uint8_t HP3457_GetCharCode(uint8_t d)
+static uint8_t HP3478_GetCharCode(uint8_t d)
 {
     // d: 1..12
     uint8_t bi = (12 - d) / 2;          // 0..5
@@ -690,7 +696,7 @@ static uint8_t HP3457_GetCharCode(uint8_t d)
 
 // Returns punctuation code 0..3 for digit number d = 1..12
 // 0 none, 1 '.', 2 ':', 3 ','
-static uint8_t HP3457_GetPunct(uint8_t d)
+static uint8_t HP3478_GetPunct(uint8_t d)
 {
     uint8_t bi = (12 - d) / 2;          // 0..5
     uint8_t even = ((d & 1u) == 0u);
@@ -708,9 +714,9 @@ static uint8_t HP3457_GetPunct(uint8_t d)
 }
 
 
-static char HP3457_CodeToAscii(uint8_t code)
+static char HP3478_CodeToAscii(uint8_t code)
 {
-    
+
     // Replace chars
     if (code == 0x3F) return '=';
     if (code == 0x1F) return '_';
@@ -728,25 +734,25 @@ static char HP3457_CodeToAscii(uint8_t code)
 }
 
 
-void HP3457_BuildDisplayString(char out12[13], char punct12[13])
+void HP3478_BuildDisplayString(char out12[13], char punct12[13])
 {
     for (int i = 0; i < 12; i++) {
         uint8_t d = (uint8_t)(i + 1);   // d = 1..12  (was 12-i)
 
-        uint8_t code = HP3457_GetCharCode(d);
+        uint8_t code = HP3478_GetCharCode(d);
 
         if (code == 0x3F) code = 0x3D;   // force '='
 
-        out12[i] = HP3457_CodeToAscii(code);
+        out12[i] = HP3478_CodeToAscii(code);
 
-        uint8_t p = HP3457_GetPunct(d);
+        uint8_t p = HP3478_GetPunct(d);
         punct12[i] = (p == 1) ? '.' : (p == 2) ? ':' : (p == 3) ? ',' : ' ';
     }
 
     // Use this to live watch in order to get code for ? chars - live watch ---> dbgCode[12]
     //for (int i = 0; i < 12; i++) {
     //    uint8_t d = (uint8_t)(i + 1);
-    //    dbgCode[i] = HP3457_GetCharCode(d);
+    //    dbgCode[i] = HP3478_GetCharCode(d);
     //}
 
     out12[12] = '\0';
@@ -754,7 +760,7 @@ void HP3457_BuildDisplayString(char out12[13], char punct12[13])
 }
 
 
-static uint8_t HP3457_GetCharCode_Alt(uint8_t d)
+static uint8_t HP3478_GetCharCode_Alt(uint8_t d)
 {
     uint8_t bi = (12 - d) / 2;
     uint8_t even = ((d & 1u) == 0u);

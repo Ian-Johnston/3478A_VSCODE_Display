@@ -12,8 +12,12 @@ C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\li
                               C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o) (__sread)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
                               C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o (memset)
+C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
+                              CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj (strchr)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
                               CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj (strncpy)
+C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
+                              CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj (strstr)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
                               C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o) (_close_r)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
@@ -32,6 +36,8 @@ C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\li
                               C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o (__libc_init_array)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
                               C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o) (__retarget_lock_init_recursive)
+C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
+                              CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj (strcpy)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
                               CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj (strlen)
 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
@@ -140,10 +146,10 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .data          0x00000000        0x0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .bss           0x00000000        0x0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .rodata.DisplaySplash.str1.4
-                0x00000000       0x3b CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .text.DisplaySplash
-                0x00000000      0x160 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x00000000      0x21c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .text.DisplaySplash2
+                0x00000000      0x168 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .text.DisplayCloneDeterminationMain
                 0x00000000       0x6c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .data.SplashIanJColourFore
@@ -303,7 +309,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
  .debug_macro   0x00000000       0xdc CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_macro   0x00000000      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x00000000      0x12b CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
@@ -386,7 +392,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .debug_macro   0x00000000       0xdc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_macro   0x00000000      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_macro   0x00000000      0x12b CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
@@ -466,8 +472,14 @@ Discarded input sections
                 0x00000000       0x52 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .text.Software_ResetPLL_LT
                 0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .text.DrawLine
+                0x00000000       0xc8 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .text.TFT_WipeTest
                 0x00000000      0x110 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .text.RightWipe
+                0x00000000       0xbe CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .text.TestDraw
+                0x00000000       0x5a CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .bss.SystemCheckTempValue
                 0x00000000        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .bss.System_Check
@@ -678,8 +690,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x1e5 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x170 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x00000000      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x00000000       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000000      0x12b CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
  .group         0x00000000        0xc CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
@@ -5889,6 +5901,9 @@ Discarded input sections
  .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
  .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
  .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
+ .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
+ .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
  .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
  .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
  .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
@@ -5896,6 +5911,9 @@ Discarded input sections
  .debug_frame   0x00000000       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
  .ARM.attributes
                 0x00000000       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strncpy.o)
+ .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
+ .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
+ .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
  .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
  .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
  .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
@@ -5974,6 +5992,9 @@ Discarded input sections
                 0x00000000        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
  .bss.__lock___sfp_recursive_mutex
                 0x00000000        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .text          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
+ .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
+ .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
  .data          0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
  .bss           0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
  .ARM.extab     0x00000000        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
@@ -6140,7 +6161,7 @@ LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/no
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x4788
+.text           0x0800010c     0x47d4
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
@@ -6154,875 +6175,905 @@ LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/no
                 0x0800015c       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.frame_dummy
                 0x08000184       0x24 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .text.FixRandomStrings
+                0x080001a8       0xa4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x080001a8                FixRandomStrings
  .text.ShiftUnitsRight
-                0x080001a8       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x080001a8                ShiftUnitsRight
+                0x0800024c       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x0800024c                ShiftUnitsRight
  .text.FixUnitText
-                0x08000200       0xa0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x08000200                FixUnitText
+                0x080002a4       0xa0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x080002a4                FixUnitText
  .text.DisplayMain
-                0x080002a0       0x88 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x080002a0                DisplayMain
+                0x08000344       0x88 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x08000344                DisplayMain
+ .text.DisplayTrigger
+                0x080003cc       0x70 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x080003cc                DisplayTrigger
  .text.DisplayAnnunciators
-                0x08000328       0xe0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x08000328                DisplayAnnunciators
+                0x0800043c       0xe0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x0800043c                DisplayAnnunciators
  .text.DisplayCloneDeterminationAux
-                0x08000408       0x74 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x08000408                DisplayCloneDeterminationAux
+                0x0800051c       0x74 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x0800051c                DisplayCloneDeterminationAux
  .text.MX_DMA_Init
-                0x0800047c       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
-                0x0800047c                MX_DMA_Init
+                0x08000590       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+                0x08000590                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x080004b0      0x198 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
-                0x080004b0                MX_GPIO_Init
+                0x080005c4      0x198 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+                0x080005c4                MX_GPIO_Init
  .text.DelayMicroseconds
-                0x08000648       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
-                0x08000648                DelayMicroseconds
+                0x0800075c       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x0800075c                DelayMicroseconds
  .text.LCD_SPI_Write
-                0x0800068c       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
-                0x0800068c                LCD_SPI_Write
+                0x080007a0       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x080007a0                LCD_SPI_Write
  .text.LCDWriteRegister
-                0x080006e4       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
-                0x080006e4                LCDWriteRegister
+                0x080007f8       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x080007f8                LCDWriteRegister
  .text.LCDWriteData
-                0x08000718       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
-                0x08000718                LCDWriteData
+                0x0800082c       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x0800082c                LCDWriteData
  .text.BuyDisplay_Init
-                0x08000750      0x592 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
-                0x08000750                BuyDisplay_Init
- *fill*         0x08000ce2        0x2 
+                0x08000864      0x592 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x08000864                BuyDisplay_Init
+ *fill*         0x08000df6        0x2 
  .text.HardwareReset
-                0x08000ce4       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000ce4                HardwareReset
+                0x08000df8       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000df8                HardwareReset
  .text.WriteRegister
-                0x08000d14       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000d14                WriteRegister
+                0x08000e28       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000e28                WriteRegister
  .text.WriteData
-                0x08000d64       0x54 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000d64                WriteData
+                0x08000e78       0x54 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000e78                WriteData
  .text.ReadStatus
-                0x08000db8       0x6c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000db8                ReadStatus
+                0x08000ecc       0x6c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000ecc                ReadStatus
  .text.ReadData
-                0x08000e24       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000e24                ReadData
+                0x08000f38       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000f38                ReadData
  .text.WriteDataToRegister
-                0x08000e7c       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000e7c                WriteDataToRegister
- .text.ConfigureFontAndPosition
-                0x08000e8c       0xc4 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000e8c                ConfigureFontAndPosition
+                0x08000f90       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000f90                WriteDataToRegister
  .text.WaitForLT7680Ready
-                0x08000f50       0x18 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000f50                WaitForLT7680Ready
+                0x08000fa0       0x18 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000fa0                WaitForLT7680Ready
+ .text.ConfigureFontAndPosition
+                0x08000fb8       0xd8 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08000fb8                ConfigureFontAndPosition
+ .text.WaitForLT7680WriteFifoNotFull
+                0x08001090       0x18 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001090                WaitForLT7680WriteFifoNotFull
+ .text.WaitForLT7680WriteComplete
+                0x080010a8       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080010a8                WaitForLT7680WriteComplete
  .text.DrawText
-                0x08000f68       0x24 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000f68                DrawText
+                0x080010c4       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080010c4                DrawText
  .text.SetTextColors
-                0x08000f8c       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000f8c                SetTextColors
+                0x080010ec       0x5c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080010ec                SetTextColors
  .text.ClearScreen
-                0x08000fe4       0x88 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08000fe4                ClearScreen
+                0x08001148       0x88 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001148                ClearScreen
  .text.Text_Mode
-                0x0800106c       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800106c                Text_Mode
+                0x080011d0       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080011d0                Text_Mode
  .text.ConfigureActiveDisplayArea_LT
-                0x0800107c       0x64 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800107c                ConfigureActiveDisplayArea_LT
+                0x080011e0       0x64 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080011e0                ConfigureActiveDisplayArea_LT
  .text.LT7680_PLL_Initial_LT
-                0x080010e0       0x5e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080010e0                LT7680_PLL_Initial_LT
+                0x08001244       0x5e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001244                LT7680_PLL_Initial_LT
  .text.Configure_Main_PIP_Window_LT
-                0x0800113e       0xac CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800113e                Configure_Main_PIP_Window_LT
+                0x080012a2       0xac CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080012a2                Configure_Main_PIP_Window_LT
  .text.Check_SDRAM_Ready_LT
-                0x080011ea       0x1a CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080011ea                Check_SDRAM_Ready_LT
+                0x0800134e       0x1a CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x0800134e                Check_SDRAM_Ready_LT
  .text.SDRAM_Init_LT
-                0x08001204       0x62 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001204                SDRAM_Init_LT
+                0x08001368       0x4a CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001368                SDRAM_Init_LT
  .text.Set_LCD_Panel_LT
-                0x08001266       0x40 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001266                Set_LCD_Panel_LT
+                0x080013b2       0x40 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080013b2                Set_LCD_Panel_LT
  .text.LCD_HorizontalWidth_VerticalHeight_LT
-                0x080012a6       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080012a6                LCD_HorizontalWidth_VerticalHeight_LT
+                0x080013f2       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080013f2                LCD_HorizontalWidth_VerticalHeight_LT
  .text.LCD_Horizontal_Non_Display_LT
-                0x080012f6       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080012f6                LCD_Horizontal_Non_Display_LT
+                0x08001442       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001442                LCD_Horizontal_Non_Display_LT
  .text.LCD_HSYNC_Start_Position_LT
-                0x08001318       0x1e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001318                LCD_HSYNC_Start_Position_LT
+                0x08001464       0x1e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001464                LCD_HSYNC_Start_Position_LT
  .text.LCD_HSYNC_Pulse_Width_LT
-                0x08001336       0x1e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001336                LCD_HSYNC_Pulse_Width_LT
+                0x08001482       0x1e CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001482                LCD_HSYNC_Pulse_Width_LT
  .text.LCD_Vertical_Non_Display_LT
-                0x08001354       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001354                LCD_Vertical_Non_Display_LT
+                0x080014a0       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080014a0                LCD_Vertical_Non_Display_LT
  .text.LCD_VSYNC_Start_Position_LT
-                0x08001376       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001376                LCD_VSYNC_Start_Position_LT
+                0x080014c2       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080014c2                LCD_VSYNC_Start_Position_LT
  .text.LCD_VSYNC_Pulse_Width_LT
-                0x0800138c       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800138c                LCD_VSYNC_Pulse_Width_LT
+                0x080014d8       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080014d8                LCD_VSYNC_Pulse_Width_LT
  .text.LCDConfigTurnOn_LT
-                0x080013a2       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080013a2                LCDConfigTurnOn_LT
- *fill*         0x080013b2        0x2 
+                0x080014ee       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080014ee                LCDConfigTurnOn_LT
+ *fill*         0x080014fe        0x2 
  .text.ConfigurePWMAndSetBrightness
-                0x080013b4       0x78 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080013b4                ConfigurePWMAndSetBrightness
+                0x08001500       0x78 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001500                ConfigurePWMAndSetBrightness
  .text.Software_Reset_LT
-                0x0800142c        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800142c                Software_Reset_LT
+                0x08001578        0xc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001578                Software_Reset_LT
  .text.Set_MISA_LT
-                0x08001438       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001438                Set_MISA_LT
+                0x08001584       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001584                Set_MISA_LT
  .text.SetMainImageWidth_LT
-                0x0800146c       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800146c                SetMainImageWidth_LT
+                0x080015b8       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080015b8                SetMainImageWidth_LT
  .text.SetMainWindowUpperLeftX_LT
-                0x08001488       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001488                SetMainWindowUpperLeftX_LT
+                0x080015d4       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080015d4                SetMainWindowUpperLeftX_LT
  .text.SetActiveWindow_LT
-                0x080014a4       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080014a4                SetActiveWindow_LT
+                0x080015f0       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080015f0                SetActiveWindow_LT
  .text.SetColorDepth_LT
-                0x080014c0       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080014c0                SetColorDepth_LT
+                0x0800160c       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x0800160c                SetColorDepth_LT
  .text.ResetGraphicWritePosition_LT
-                0x080014d0       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080014d0                ResetGraphicWritePosition_LT
+                0x0800161c       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x0800161c                ResetGraphicWritePosition_LT
  .text.SetGraphicRWYCoordinate_LT
-                0x080014ec       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x080014ec                SetGraphicRWYCoordinate_LT
+                0x08001638       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001638                SetGraphicRWYCoordinate_LT
  .text.SetCanvasStartAddress_LT
-                0x08001508       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001508                SetCanvasStartAddress_LT
+                0x08001654       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001654                SetCanvasStartAddress_LT
  .text.SetCanvasImageWidth_LT
-                0x0800153c       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800153c                SetCanvasImageWidth_LT
+                0x08001688       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08001688                SetCanvasImageWidth_LT
  .text.SendAllToLT7680_LT
-                0x08001558      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x08001558                SendAllToLT7680_LT
- .text.DrawLine
-                0x0800166e       0xaa CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x0800166e                DrawLine
+                0x080016a4      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x080016a4                SendAllToLT7680_LT
+ *fill*         0x080017ba        0x2 
  .text.RunBluePillSpeedTestOffline
-                0x08001718       0x54 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x08001718                RunBluePillSpeedTestOffline
+                0x080017bc       0x54 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x080017bc                RunBluePillSpeedTestOffline
  .text.Error_Handler
-                0x0800176c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x0800176c                Error_Handler
+                0x08001810        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x08001810                Error_Handler
  .text.SystemClock_Config
-                0x08001770       0x64 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x08001770                SystemClock_Config
- .text.main     0x080017d4      0x160 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x080017d4                main
+                0x08001814       0x64 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x08001814                SystemClock_Config
+ .text.main     0x08001878       0x90 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x08001878                main
  .text.MX_SPI1_Init
-                0x08001934       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
-                0x08001934                MX_SPI1_Init
+                0x08001908       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x08001908                MX_SPI1_Init
  .text.HAL_SPI_MspInit
-                0x0800197c       0xe8 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
-                0x0800197c                HAL_SPI_MspInit
+                0x08001950       0xe8 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x08001950                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x08001a64       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08001a64                HAL_MspInit
+                0x08001a38       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08001a38                HAL_MspInit
  .text.NMI_Handler
-                0x08001aa8        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001aa8                NMI_Handler
+                0x08001a7c        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a7c                NMI_Handler
  .text.HardFault_Handler
-                0x08001aaa        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001aaa                HardFault_Handler
+                0x08001a7e        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a7e                HardFault_Handler
  .text.MemManage_Handler
-                0x08001aac        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001aac                MemManage_Handler
+                0x08001a80        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a80                MemManage_Handler
  .text.BusFault_Handler
-                0x08001aae        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001aae                BusFault_Handler
+                0x08001a82        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a82                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001ab0        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ab0                UsageFault_Handler
+                0x08001a84        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a84                UsageFault_Handler
  .text.SVC_Handler
-                0x08001ab2        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ab2                SVC_Handler
+                0x08001a86        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a86                SVC_Handler
  .text.DebugMon_Handler
-                0x08001ab4        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ab4                DebugMon_Handler
+                0x08001a88        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a88                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001ab6        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ab6                PendSV_Handler
+                0x08001a8a        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a8a                PendSV_Handler
  .text.SysTick_Handler
-                0x08001ab8        0x8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ab8                SysTick_Handler
+                0x08001a8c        0x8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a8c                SysTick_Handler
  .text.DMA1_Channel3_IRQHandler
-                0x08001ac0       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ac0                DMA1_Channel3_IRQHandler
+                0x08001a94       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001a94                DMA1_Channel3_IRQHandler
  .text.DMA1_Channel4_IRQHandler
-                0x08001ad0        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ad0                DMA1_Channel4_IRQHandler
+                0x08001aa4        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001aa4                DMA1_Channel4_IRQHandler
  .text.SPI2_IRQHandler
-                0x08001ad2        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ad2                SPI2_IRQHandler
+                0x08001aa6        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001aa6                SPI2_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08001ad4       0x24 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08001ad4                EXTI15_10_IRQHandler
- .text._sbrk    0x08001af8       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
-                0x08001af8                _sbrk
+                0x08001aa8       0x24 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001aa8                EXTI15_10_IRQHandler
+ .text._sbrk    0x08001acc       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+                0x08001acc                _sbrk
  .text.SystemInit
-                0x08001b40        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08001b40                SystemInit
- *fill*         0x08001b42        0x2 
- .text.HP3457_GetCharCode
-                0x08001b44       0xa0 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .text.HP3457_GetPunct
-                0x08001be4       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .text.HP3457_CodeToAscii
-                0x08001c0c       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .text.HP3457_GetCharCode_Alt
-                0x08001c40       0xa4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001b14        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08001b14                SystemInit
+ *fill*         0x08001b16        0x2 
+ .text.HP3478_GetCharCode
+                0x08001b18       0xa0 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .text.HP3478_GetPunct
+                0x08001bb8       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .text.HP3478_CodeToAscii
+                0x08001be0       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .text.HP3478_GetCharCode_Alt
+                0x08001c14       0xa4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
  .text.MX_TIM3_Init
-                0x08001ce4       0x94 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08001ce4                MX_TIM3_Init
+                0x08001cb8       0x94 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001cb8                MX_TIM3_Init
  .text.TIM3_IRQHandler
-                0x08001d78       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08001d78                TIM3_IRQHandler
+                0x08001d4c       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001d4c                TIM3_IRQHandler
  .text.HAL_GPIO_EXTI_Callback
-                0x08001d88       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08001d88                HAL_GPIO_EXTI_Callback
- .text.HP3457_BuildDisplayString
-                0x08001db8       0x5c CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08001db8                HP3457_BuildDisplayString
+                0x08001d5c       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001d5c                HAL_GPIO_EXTI_Callback
+ .text.HP3478_BuildDisplayString
+                0x08001d8c       0x5c CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001d8c                HP3478_BuildDisplayString
  .text.DMM_HandleO2Clock
-                0x08001e14      0x5f0 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08001e14                DMM_HandleO2Clock
+                0x08001de8      0x610 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x08001de8                DMM_HandleO2Clock
  .text.HAL_TIM_IC_CaptureCallback
-                0x08002404       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x08002404                HAL_TIM_IC_CaptureCallback
+                0x080023f8       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x080023f8                HAL_TIM_IC_CaptureCallback
  .text.HAL_InitTick
-                0x08002420       0x4c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002420                HAL_InitTick
+                0x08002414       0x4c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08002414                HAL_InitTick
  .text.HAL_Init
-                0x0800246c       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x0800246c                HAL_Init
+                0x08002460       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08002460                HAL_Init
  .text.HAL_IncTick
-                0x08002490       0x18 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002490                HAL_IncTick
+                0x08002484       0x18 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08002484                HAL_IncTick
  .text.HAL_GetTick
-                0x080024a8        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080024a8                HAL_GetTick
+                0x0800249c        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0800249c                HAL_GetTick
  .text.HAL_Delay
-                0x080024b4       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080024b4                HAL_Delay
+                0x080024a8       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080024a8                HAL_Delay
  .text.__NVIC_SetPriority
-                0x080024dc       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080024d0       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08002504       0x3e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- *fill*         0x08002542        0x2 
+                0x080024f8       0x3e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ *fill*         0x08002536        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08002544       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002544                HAL_NVIC_SetPriorityGrouping
+                0x08002538       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08002538                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08002568       0x20 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002568                HAL_NVIC_SetPriority
+                0x0800255c       0x20 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800255c                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08002588       0x1c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002588                HAL_NVIC_EnableIRQ
+                0x0800257c       0x1c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800257c                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x080025a4       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080025a4                HAL_SYSTICK_Config
+                0x08002598       0x28 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08002598                HAL_SYSTICK_Config
  .text.HAL_DMA_Init
-                0x080025cc       0x68 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x080025cc                HAL_DMA_Init
+                0x080025c0       0x68 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x080025c0                HAL_DMA_Init
  .text.HAL_DMA_IRQHandler
-                0x08002634      0x144 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08002634                HAL_DMA_IRQHandler
+                0x08002628      0x144 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08002628                HAL_DMA_IRQHandler
  .text.HAL_GPIO_Init
-                0x08002778      0x21c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002778                HAL_GPIO_Init
+                0x0800276c      0x21c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0800276c                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08002994        0xe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002994                HAL_GPIO_ReadPin
+                0x08002988        0xe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08002988                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x080029a2        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080029a2                HAL_GPIO_WritePin
+                0x08002996        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08002996                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x080029ae       0x12 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080029ae                HAL_GPIO_TogglePin
+                0x080029a2       0x12 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080029a2                HAL_GPIO_TogglePin
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x080029c0       0x1c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x080029c0                HAL_GPIO_EXTI_IRQHandler
+                0x080029b4       0x1c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080029b4                HAL_GPIO_EXTI_IRQHandler
  .text.RCC_Delay
-                0x080029dc       0x2c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080029d0       0x2c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08002a08      0x410 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002a08                HAL_RCC_OscConfig
+                0x080029fc      0x410 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080029fc                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08002e18       0x54 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002e18                HAL_RCC_GetSysClockFreq
+                0x08002e0c       0x54 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002e0c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08002e6c      0x16c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002e6c                HAL_RCC_ClockConfig
+                0x08002e60      0x16c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002e60                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08002fd8        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002fd8                HAL_RCC_GetHCLKFreq
+                0x08002fcc        0xc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002fcc                HAL_RCC_GetHCLKFreq
  .text.SPI_WaitFlagStateUntilTimeout
-                0x08002fe4       0xc8 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08002fd8       0xc8 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .text.SPI_EndRxTxTransaction
-                0x080030ac       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x080030a0       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .text.SPI_EndRxTransaction
-                0x080030d0       0x74 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x080030c4       0x74 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .text.HAL_SPI_Init
-                0x08003144       0xb6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x08003144                HAL_SPI_Init
+                0x08003138       0xb6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08003138                HAL_SPI_Init
  .text.HAL_SPI_Transmit
-                0x080031fa      0x1b8 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x080031fa                HAL_SPI_Transmit
+                0x080031ee      0x1b8 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x080031ee                HAL_SPI_Transmit
  .text.HAL_SPI_TransmitReceive
-                0x080033b2      0x244 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x080033b2                HAL_SPI_TransmitReceive
+                0x080033a6      0x244 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x080033a6                HAL_SPI_TransmitReceive
  .text.HAL_SPI_Receive
-                0x080035f6      0x17e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x080035f6                HAL_SPI_Receive
+                0x080035ea      0x17e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x080035ea                HAL_SPI_Receive
  .text.TIM_TI1_ConfigInputStage
-                0x08003774       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003768       0x24 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI2_SetConfig
-                0x08003798       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800378c       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x080037ce       0x26 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080037c2       0x26 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI3_SetConfig
-                0x080037f4       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080037e8       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI4_SetConfig
-                0x0800382a       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800381e       0x36 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08003860       0x10 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003854       0x10 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_IC_MspInit
-                0x08003870        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003870                HAL_TIM_IC_MspInit
+                0x08003864        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003864                HAL_TIM_IC_MspInit
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08003872        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003872                HAL_TIM_PeriodElapsedCallback
+                0x08003866        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003866                HAL_TIM_PeriodElapsedCallback
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08003874        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003874                HAL_TIM_OC_DelayElapsedCallback
+                0x08003868        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003868                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08003876        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003876                HAL_TIM_PWM_PulseFinishedCallback
+                0x0800386a        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800386a                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08003878        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003878                HAL_TIM_TriggerCallback
+                0x0800386c        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800386c                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x0800387a      0x17a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800387a                HAL_TIM_IRQHandler
+                0x0800386e      0x17a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800386e                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x080039f4       0x74 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080039f4                TIM_Base_SetConfig
+                0x080039e8       0x74 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080039e8                TIM_Base_SetConfig
  .text.HAL_TIM_IC_Init
-                0x08003a68       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003a68                HAL_TIM_IC_Init
+                0x08003a5c       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003a5c                HAL_TIM_IC_Init
  .text.TIM_TI1_SetConfig
-                0x08003ac0       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003ac0                TIM_TI1_SetConfig
+                0x08003ab4       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003ab4                TIM_TI1_SetConfig
  .text.HAL_TIM_IC_ConfigChannel
-                0x08003b18       0xcc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003b18                HAL_TIM_IC_ConfigChannel
+                0x08003b0c       0xcc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003b0c                HAL_TIM_IC_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x08003be4       0x18 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003be4                TIM_ETR_SetConfig
+                0x08003bd8       0x18 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003bd8                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x08003bfc       0xfe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003bfc                HAL_TIM_ConfigClockSource
+                0x08003bf0       0xfe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003bf0                HAL_TIM_ConfigClockSource
  .text.TIM_CCxChannelCmd
-                0x08003cfa       0x1e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003cfa                TIM_CCxChannelCmd
+                0x08003cee       0x1e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003cee                TIM_CCxChannelCmd
  .text.HAL_TIM_IC_Start_IT
-                0x08003d18      0x148 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08003d18                HAL_TIM_IC_Start_IT
+                0x08003d0c      0x148 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08003d0c                HAL_TIM_IC_Start_IT
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08003e60       0x6c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08003e60                HAL_TIMEx_MasterConfigSynchronization
+                0x08003e54       0x6c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08003e54                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x08003ecc        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08003ecc                HAL_TIMEx_CommutCallback
+                0x08003ec0        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08003ec0                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08003ece        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08003ece                HAL_TIMEx_BreakCallback
+                0x08003ec2        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08003ec2                HAL_TIMEx_BreakCallback
  .text.Reset_Handler
-                0x08003ed0       0x48 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
-                0x08003ed0                Reset_Handler
+                0x08003ec4       0x48 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+                0x08003ec4                Reset_Handler
  .text.Default_Handler
-                0x08003f18        0x2 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
-                0x08003f18                RTC_Alarm_IRQHandler
-                0x08003f18                EXTI2_IRQHandler
-                0x08003f18                TIM1_CC_IRQHandler
-                0x08003f18                PVD_IRQHandler
-                0x08003f18                EXTI3_IRQHandler
-                0x08003f18                EXTI0_IRQHandler
-                0x08003f18                I2C2_EV_IRQHandler
-                0x08003f18                ADC1_2_IRQHandler
-                0x08003f18                SPI1_IRQHandler
-                0x08003f18                TAMPER_IRQHandler
-                0x08003f18                USART3_IRQHandler
-                0x08003f18                RTC_IRQHandler
-                0x08003f18                DMA1_Channel7_IRQHandler
-                0x08003f18                CAN1_RX1_IRQHandler
-                0x08003f18                TIM4_IRQHandler
-                0x08003f18                I2C1_EV_IRQHandler
-                0x08003f18                DMA1_Channel6_IRQHandler
-                0x08003f18                RCC_IRQHandler
-                0x08003f18                TIM1_TRG_COM_IRQHandler
-                0x08003f18                DMA1_Channel1_IRQHandler
-                0x08003f18                Default_Handler
-                0x08003f18                EXTI9_5_IRQHandler
-                0x08003f18                DMA1_Channel5_IRQHandler
-                0x08003f18                EXTI4_IRQHandler
-                0x08003f18                USB_LP_CAN1_RX0_IRQHandler
-                0x08003f18                USB_HP_CAN1_TX_IRQHandler
-                0x08003f18                TIM1_UP_IRQHandler
-                0x08003f18                WWDG_IRQHandler
-                0x08003f18                TIM2_IRQHandler
-                0x08003f18                TIM1_BRK_IRQHandler
-                0x08003f18                EXTI1_IRQHandler
-                0x08003f18                USART2_IRQHandler
-                0x08003f18                I2C2_ER_IRQHandler
-                0x08003f18                DMA1_Channel2_IRQHandler
-                0x08003f18                CAN1_SCE_IRQHandler
-                0x08003f18                FLASH_IRQHandler
-                0x08003f18                USART1_IRQHandler
-                0x08003f18                I2C1_ER_IRQHandler
-                0x08003f18                USBWakeUp_IRQHandler
- *fill*         0x08003f1a        0x2 
- .text.sprintf  0x08003f1c       0x44 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sprintf.o)
-                0x08003f1c                siprintf
-                0x08003f1c                sprintf
- .text.memset   0x08003f60       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
-                0x08003f60                memset
- .text.__errno  0x08003f70        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
-                0x08003f70                __errno
+                0x08003f0c        0x2 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+                0x08003f0c                RTC_Alarm_IRQHandler
+                0x08003f0c                EXTI2_IRQHandler
+                0x08003f0c                TIM1_CC_IRQHandler
+                0x08003f0c                PVD_IRQHandler
+                0x08003f0c                EXTI3_IRQHandler
+                0x08003f0c                EXTI0_IRQHandler
+                0x08003f0c                I2C2_EV_IRQHandler
+                0x08003f0c                ADC1_2_IRQHandler
+                0x08003f0c                SPI1_IRQHandler
+                0x08003f0c                TAMPER_IRQHandler
+                0x08003f0c                USART3_IRQHandler
+                0x08003f0c                RTC_IRQHandler
+                0x08003f0c                DMA1_Channel7_IRQHandler
+                0x08003f0c                CAN1_RX1_IRQHandler
+                0x08003f0c                TIM4_IRQHandler
+                0x08003f0c                I2C1_EV_IRQHandler
+                0x08003f0c                DMA1_Channel6_IRQHandler
+                0x08003f0c                RCC_IRQHandler
+                0x08003f0c                TIM1_TRG_COM_IRQHandler
+                0x08003f0c                DMA1_Channel1_IRQHandler
+                0x08003f0c                Default_Handler
+                0x08003f0c                EXTI9_5_IRQHandler
+                0x08003f0c                DMA1_Channel5_IRQHandler
+                0x08003f0c                EXTI4_IRQHandler
+                0x08003f0c                USB_LP_CAN1_RX0_IRQHandler
+                0x08003f0c                USB_HP_CAN1_TX_IRQHandler
+                0x08003f0c                TIM1_UP_IRQHandler
+                0x08003f0c                WWDG_IRQHandler
+                0x08003f0c                TIM2_IRQHandler
+                0x08003f0c                TIM1_BRK_IRQHandler
+                0x08003f0c                EXTI1_IRQHandler
+                0x08003f0c                USART2_IRQHandler
+                0x08003f0c                I2C2_ER_IRQHandler
+                0x08003f0c                DMA1_Channel2_IRQHandler
+                0x08003f0c                CAN1_SCE_IRQHandler
+                0x08003f0c                FLASH_IRQHandler
+                0x08003f0c                USART1_IRQHandler
+                0x08003f0c                I2C1_ER_IRQHandler
+                0x08003f0c                USBWakeUp_IRQHandler
+ *fill*         0x08003f0e        0x2 
+ .text.sprintf  0x08003f10       0x44 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sprintf.o)
+                0x08003f10                siprintf
+                0x08003f10                sprintf
+ .text.memset   0x08003f54       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+                0x08003f54                memset
+ .text.strchr   0x08003f64       0x1a C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
+                0x08003f64                strchr
+ .text.strstr   0x08003f7e       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
+                0x08003f7e                strstr
+ *fill*         0x08003faa        0x2 
+ .text.__errno  0x08003fac        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x08003fac                __errno
  .text.__libc_init_array
-                0x08003f7c       0x48 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
-                0x08003f7c                __libc_init_array
+                0x08003fb8       0x48 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+                0x08003fb8                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08003fc4        0x2 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x08003fc4                __retarget_lock_acquire_recursive
+                0x08004000        0x2 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004000                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08003fc6        0x2 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x08003fc6                __retarget_lock_release_recursive
- .text._free_r  0x08003fc8       0x90 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
-                0x08003fc8                _free_r
+                0x08004002        0x2 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004002                __retarget_lock_release_recursive
+ .text.strcpy   0x08004004       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
+                0x08004004                strcpy
+ .text._free_r  0x08004014       0x90 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+                0x08004014                _free_r
  .text.sbrk_aligned
-                0x08004058       0x44 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x080040a4       0x44 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x0800409c      0x100 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x0800409c                _malloc_r
+                0x080040e8      0x100 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x080040e8                _malloc_r
  .text.__malloc_lock
-                0x0800419c        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x0800419c                __malloc_lock
+                0x080041e8        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x080041e8                __malloc_lock
  .text.__malloc_unlock
-                0x080041a8        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x080041a8                __malloc_unlock
+                0x080041f4        0xc C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x080041f4                __malloc_unlock
  .text.__ssputs_r
-                0x080041b4       0xb6 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
-                0x080041b4                __ssputs_r
- *fill*         0x0800426a        0x2 
+                0x08004200       0xb6 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x08004200                __ssputs_r
+ *fill*         0x080042b6        0x2 
  .text._svfprintf_r
-                0x0800426c      0x1f8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
-                0x0800426c                _svfiprintf_r
-                0x0800426c                _svfprintf_r
+                0x080042b8      0x1f8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x080042b8                _svfiprintf_r
+                0x080042b8                _svfprintf_r
  .text._printf_common
-                0x08004464       0xe4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004464                _printf_common
+                0x080044b0       0xe4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080044b0                _printf_common
  .text._printf_i
-                0x08004548      0x23c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004548                _printf_i
- .text.memmove  0x08004784       0x34 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
-                0x08004784                memmove
- .text._sbrk_r  0x080047b8       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
-                0x080047b8                _sbrk_r
- .text.memchr   0x080047d8       0x1c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
-                0x080047d8                memchr
- .text.memcpy   0x080047f4       0x1c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
-                0x080047f4                memcpy
+                0x08004594      0x23c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08004594                _printf_i
+ .text.memmove  0x080047d0       0x34 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
+                0x080047d0                memmove
+ .text._sbrk_r  0x08004804       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+                0x08004804                _sbrk_r
+ .text.memchr   0x08004824       0x1c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x08004824                memchr
+ .text.memcpy   0x08004840       0x1c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+                0x08004840                memcpy
  .text._realloc_r
-                0x08004810       0x5c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
-                0x08004810                _realloc_r
+                0x0800485c       0x5c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
+                0x0800485c                _realloc_r
  .text._malloc_usable_size_r
-                0x0800486c       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
-                0x0800486c                _malloc_usable_size_r
+                0x080048b8       0x10 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
+                0x080048b8                _malloc_usable_size_r
  *(.glue_7)
- .glue_7        0x0800487c        0x0 linker stubs
+ .glue_7        0x080048c8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800487c        0x0 linker stubs
+ .glue_7t       0x080048c8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800487c        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080048c8        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0800487c        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x0800487c                _init
- .init          0x08004880        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080048c8        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x080048c8                _init
+ .init          0x080048cc        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08004888        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x08004888                _fini
- .fini          0x0800488c        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
-                0x08004894                        . = ALIGN (0x4)
-                0x08004894                        _etext = .
+ .fini          0x080048d4        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x080048d4                _fini
+ .fini          0x080048d8        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x080048e0                        . = ALIGN (0x4)
+                0x080048e0                        _etext = .
 
-.vfp11_veneer   0x08004894        0x0
- .vfp11_veneer  0x08004894        0x0 linker stubs
+.vfp11_veneer   0x080048e0        0x0
+ .vfp11_veneer  0x080048e0        0x0 linker stubs
 
-.v4_bx          0x08004894        0x0
- .v4_bx         0x08004894        0x0 linker stubs
+.v4_bx          0x080048e0        0x0
+ .v4_bx         0x080048e0        0x0 linker stubs
 
-.iplt           0x08004894        0x0
- .iplt          0x08004894        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x080048e0        0x0
+ .iplt          0x080048e0        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08004894      0x294
-                0x08004894                        . = ALIGN (0x4)
+.rodata         0x080048e0      0x314
+                0x080048e0                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08004894       0x60 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .rodata        0x080048e0       0x88 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  *(.rodata*)
+ .rodata.FixRandomStrings.str1.4
+                0x08004968      0x145 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                                 0x41 (size before relaxing)
+ .rodata.DisplayTrigger.str1.4
+                0x08004aad        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .rodata.DisplayCloneDeterminationMain.str1.4
-                0x080048f4      0x101 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                                  0x4 (size before relaxing)
+                0x08004aad        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .rodata.DisplayCloneDeterminationAux.str1.4
-                0x080049f5       0x12 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x08004aad       0x12 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .rodata.str1.4
-                0x080049f5       0xe9 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- *fill*         0x080049f5        0x3 
+                0x08004aad       0xe5 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ *fill*         0x08004aad        0x3 
  .rodata.rules.0
-                0x080049f8       0x8c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x08004ab0       0xa0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .rodata.unit4.1
-                0x08004a84       0x4c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x08004b50       0x4c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .rodata.ClearScreen.str1.4
-                0x08004ad0        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x08004b9c        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .rodata.AHBPrescTable
-                0x08004ad0       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08004ad0                AHBPrescTable
+                0x08004b9c       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08004b9c                AHBPrescTable
  .rodata.aPredivFactorTable.0
-                0x08004ae0        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x08004ae2        0x2 
+                0x08004bac        0x2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x08004bae        0x2 
  .rodata.aPLLMULFactorTable.1
-                0x08004ae4       0x10 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08004bb0       0x10 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata._svfprintf_r.str1.1
-                0x08004af4       0x33 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x08004bc0       0x33 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08004b27       0x22 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004b4c                        . = ALIGN (0x4)
- *fill*         0x08004b27        0x1 
+                0x08004bf3       0x22 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08004c18                        . = ALIGN (0x4)
+ *fill*         0x08004bf3        0x1 
 
-.ARM.extab      0x08004b28        0x0
-                0x08004b28                        . = ALIGN (0x4)
+.ARM.extab      0x08004bf4        0x0
+                0x08004bf4                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004b28                        . = ALIGN (0x4)
+                0x08004bf4                        . = ALIGN (0x4)
 
-.ARM            0x08004b28        0x8
-                0x08004b28                        . = ALIGN (0x4)
-                0x08004b28                        __exidx_start = .
+.ARM            0x08004bf4        0x8
+                0x08004bf4                        . = ALIGN (0x4)
+                0x08004bf4                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08004b28        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
-                0x08004b30                        __exidx_end = .
-                0x08004b30                        . = ALIGN (0x4)
+ .ARM.exidx     0x08004bf4        0x8 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x08004bfc                        __exidx_end = .
+                0x08004bfc                        . = ALIGN (0x4)
 
-.rel.dyn        0x08004b30        0x0
- .rel.iplt      0x08004b30        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08004bfc        0x0
+ .rel.iplt      0x08004bfc        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x08004b30        0x0
-                0x08004b30                        . = ALIGN (0x4)
-                0x08004b30                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004bfc        0x0
+                0x08004bfc                        . = ALIGN (0x4)
+                0x08004bfc                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004b30                        PROVIDE (__preinit_array_end = .)
-                0x08004b30                        . = ALIGN (0x4)
+                0x08004bfc                        PROVIDE (__preinit_array_end = .)
+                0x08004bfc                        . = ALIGN (0x4)
 
-.init_array     0x08004b30        0x4
-                0x08004b30                        . = ALIGN (0x4)
-                0x08004b30                        PROVIDE (__init_array_start = .)
+.init_array     0x08004bfc        0x4
+                0x08004bfc                        . = ALIGN (0x4)
+                0x08004bfc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08004b30        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x08004b34                        PROVIDE (__init_array_end = .)
-                0x08004b34                        . = ALIGN (0x4)
+ .init_array    0x08004bfc        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08004c00                        PROVIDE (__init_array_end = .)
+                0x08004c00                        . = ALIGN (0x4)
 
-.fini_array     0x08004b34        0x4
-                0x08004b34                        . = ALIGN (0x4)
+.fini_array     0x08004c00        0x4
+                0x08004c00                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004b34        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x08004c00        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08004b38                        . = ALIGN (0x4)
-                0x08004b38                        _sidata = LOADADDR (.data)
+                0x08004c04                        . = ALIGN (0x4)
+                0x08004c04                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x68 load address 0x08004b38
+.data           0x20000000       0x7c load address 0x08004c04
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
  *(.data*)
+ .data.prevText1.2
+                0x20000000        0xf CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ *fill*         0x2000000f        0x1 
  .data.AuxColourForeLS
-                0x20000000        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x20000000                AuxColourForeLS
+                0x20000010        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x20000010                AuxColourForeLS
+ .data.TriggerColourFore
+                0x20000014        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x20000014                TriggerColourFore
  .data.AnnunColourFore
-                0x20000004        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x20000004                AnnunColourFore
+                0x20000018        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x20000018                AnnunColourFore
  .data.MainColourFore
-                0x20000008        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x20000008                MainColourFore
+                0x2000001c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x2000001c                MainColourFore
  .data.SystemCoreClock
-                0x2000000c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
-                0x2000000c                SystemCoreClock
+                0x20000020        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x20000020                SystemCoreClock
  .data.uwTickFreq
-                0x20000010        0x1 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x20000010                uwTickFreq
- *fill*         0x20000011        0x3 
+                0x20000024        0x1 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x20000024                uwTickFreq
+ *fill*         0x20000025        0x3 
  .data.uwTickPrio
-                0x20000014        0x4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x20000014                uwTickPrio
+                0x20000028        0x4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x20000028                uwTickPrio
  .data._impure_ptr
-                0x20000018        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
-                0x20000018                _impure_ptr
+                0x2000002c        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+                0x2000002c                _impure_ptr
  .data._impure_data
-                0x2000001c       0x4c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
-                0x2000001c                _impure_data
+                0x20000030       0x4c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+                0x20000030                _impure_data
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000068                        . = ALIGN (0x4)
-                0x20000068                        _edata = .
+                0x2000007c                        . = ALIGN (0x4)
+                0x2000007c                        _edata = .
 
 .tm_clone_table
-                0x20000068        0x0 load address 0x08004ba0
+                0x2000007c        0x0 load address 0x08004c80
  .tm_clone_table
-                0x20000068        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x2000007c        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .tm_clone_table
-                0x20000068        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+                0x2000007c        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
 
-.igot.plt       0x20000068        0x0 load address 0x08004ba0
- .igot.plt      0x20000068        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x20000068                        . = ALIGN (0x4)
+.igot.plt       0x2000007c        0x0 load address 0x08004c80
+ .igot.plt      0x2000007c        0x0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x2000007c                        . = ALIGN (0x4)
 
-.bss            0x20000068      0x588 load address 0x08004ba0
-                0x20000068                        _sbss = .
-                0x20000068                        __bss_start__ = _sbss
+.bss            0x2000007c      0x588 load address 0x08004c80
+                0x2000007c                        _sbss = .
+                0x2000007c                        __bss_start__ = _sbss
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x20000068        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
- *fill*         0x20000069        0x3 
- .bss.object.0  0x2000006c       0x18 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x2000007c        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x2000007d        0x3 
+ .bss.object.0  0x20000080       0x18 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .bss.BackgroundColour
-                0x20000084        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                0x20000084                BackgroundColour
+                0x20000098        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x20000098                BackgroundColour
  .bss.LT7680_SPI_Read_ok
-                0x20000088        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
-                0x20000088                LT7680_SPI_Read_ok
- *fill*         0x20000089        0x3 
+                0x2000009c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x2000009c                LT7680_SPI_Read_ok
+ *fill*         0x2000009d        0x3 
  .bss.dbg_loop_test_done
-                0x2000008c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x2000008c                dbg_loop_test_done
+                0x200000a0        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x200000a0                dbg_loop_test_done
  .bss.dbg_loop_per_sec
-                0x20000090        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x20000090                dbg_loop_per_sec
+                0x200000a4        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x200000a4                dbg_loop_per_sec
  .bss.dbg_loop_count
-                0x20000094        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x20000094                dbg_loop_count
- .bss.htim3     0x20000098       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
-                0x20000098                htim3
+                0x200000a8        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x200000a8                dbg_loop_count
+ .bss.htim3     0x200000ac       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x200000ac                htim3
  .bss.hdma_spi1_tx
-                0x200000e0       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
-                0x200000e0                hdma_spi1_tx
- .bss.hspi1     0x20000124       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
-                0x20000124                hspi1
+                0x200000f4       0x44 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x200000f4                hdma_spi1_tx
+ .bss.hspi1     0x20000138       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x20000138                hspi1
  .bss.__sbrk_heap_end
-                0x2000017c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+                0x20000190        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .bss.dpFarRight
+                0x20000194        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000194                dpFarRight
  .bss.dbg_after_build
-                0x20000180        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000180                dbg_after_build
+                0x20000195        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000195                dbg_after_build
  .bss.dbg_char8_mapped
-                0x20000181        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000181                dbg_char8_mapped
+                0x20000196        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000196                dbg_char8_mapped
  .bss.dbg_char8
-                0x20000182        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000182                dbg_char8
- *fill*         0x20000183        0x1 
- .bss.Annunc    0x20000184        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000184                Annunc
- *fill*         0x20000191        0x3 
+                0x20000197        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000197                dbg_char8
+ .bss.Annunc    0x20000198        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000198                Annunc
+ *fill*         0x200001a5        0x3 
  .bss.displayWithPunct
-                0x20000194       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000194                displayWithPunct
- .bss.punctStr  0x200001b4        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001b4                punctStr
- *fill*         0x200001c1        0x3 
+                0x200001a8       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200001a8                displayWithPunct
+ .bss.punctStr  0x200001c8        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200001c8                punctStr
+ *fill*         0x200001d5        0x3 
  .bss.displayStr
-                0x200001c4        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001c4                displayStr
- *fill*         0x200001d1        0x3 
+                0x200001d8        0xd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200001d8                displayStr
+ *fill*         0x200001e5        0x3 
  .bss.dbgCode_alt
-                0x200001d4        0xc CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001d4                dbgCode_alt
- .bss.dbgCode   0x200001e0        0xc CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001e0                dbgCode
+                0x200001e8        0xc CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200001e8                dbgCode_alt
+ .bss.dbgCode   0x200001f4        0xc CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200001f4                dbgCode
  .bss.regCNonZeroWrites
-                0x200001ec        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001ec                regCNonZeroWrites
+                0x20000200        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000200                regCNonZeroWrites
  .bss.lastCmdAtRegC
-                0x200001f0        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001f0                lastCmdAtRegC
- *fill*         0x200001f2        0x2 
- .bss.lastRegC  0x200001f4        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001f4                lastRegC
- *fill*         0x200001fa        0x2 
+                0x20000204        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000204                lastCmdAtRegC
+ *fill*         0x20000206        0x2 
+ .bss.lastRegC  0x20000208        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000208                lastRegC
+ *fill*         0x2000020e        0x2 
  .bss.regCWrites
-                0x200001fc        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200001fc                regCWrites
+                0x20000210        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000210                regCWrites
  .bss.cmdRingIdx
-                0x20000200        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000200                cmdRingIdx
- *fill*         0x20000201        0x3 
- .bss.cmdRing   0x20000204       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000204                cmdRing
+                0x20000214        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000214                cmdRingIdx
+ *fill*         0x20000215        0x3 
+ .bss.cmdRing   0x20000218       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000218                cmdRing
  .bss.cmd0A8NearCount
-                0x20000224        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000224                cmd0A8NearCount
- .bss.cmd068NearCount
-                0x20000228        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000228                cmd068NearCount
- .bss.cmdOtherCount
-                0x2000022c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000022c                cmdOtherCount
- .bss.lastCmd10
-                0x20000230        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000230                lastCmd10
- .bss.inaGap2   0x20000232        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.isaBitCount
-                0x20000233        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.isa10     0x20000234        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- *fill*         0x20000236        0x2 
- .bss.isaBranchHits
                 0x20000238        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000238                isaBranchHits
- .bss.byteBitCount
-                0x2000023c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.byteShift
-                0x2000023d        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.tenCount  0x2000023e        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- *fill*         0x2000023f        0x1 
- .bss.cmdIgnoredCount
+                0x20000238                cmd0A8NearCount
+ .bss.cmd068NearCount
+                0x2000023c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000023c                cmd068NearCount
+ .bss.cmdOtherCount
                 0x20000240        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000240                cmdIgnoredCount
- .bss.cmd2E0Count
-                0x20000244        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000244                cmd2E0Count
- .bss.lastCmd2  0x20000248        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000248                lastCmd2
+                0x20000240                cmdOtherCount
+ .bss.lastCmd10
+                0x20000244        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000244                lastCmd10
+ .bss.inaGap2   0x20000246        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.isaBitCount
+                0x20000247        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.isa10     0x20000248        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
  *fill*         0x2000024a        0x2 
- .bss.cmd2F0Count
+ .bss.isaBranchHits
                 0x2000024c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000024c                cmd2F0Count
- .bss.cmd0A8Count
-                0x20000250        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000250                cmd0A8Count
- .bss.cmd068Count
+                0x2000024c                isaBranchHits
+ .bss.byteBitCount
+                0x20000250        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.byteShift
+                0x20000251        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.tenCount  0x20000252        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ *fill*         0x20000253        0x1 
+ .bss.cmdIgnoredCount
                 0x20000254        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000254                cmd068Count
- .bss.cmd028Count
+                0x20000254                cmdIgnoredCount
+ .bss.cmd2E0Count
                 0x20000258        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000258                cmd028Count
+                0x20000258                cmd2E0Count
+ .bss.lastCmd2  0x2000025c        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000025c                lastCmd2
+ *fill*         0x2000025e        0x2 
+ .bss.cmd2F0Count
+                0x20000260        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000260                cmd2F0Count
+ .bss.cmd0A8Count
+                0x20000264        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000264                cmd0A8Count
+ .bss.cmd068Count
+                0x20000268        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000268                cmd068Count
+ .bss.cmd028Count
+                0x2000026c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000026c                cmd028Count
  .bss.lastExpected
-                0x2000025c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000025c                lastExpected
+                0x20000270        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000270                lastExpected
  .bss.currentTarget
-                0x2000025d        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.prevSync  0x2000025e        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- *fill*         0x2000025f        0x1 
- .bss.ann       0x20000260        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000260                ann
- *fill*         0x20000262        0x2 
- .bss.regC      0x20000264        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000264                regC
- *fill*         0x2000026a        0x2 
- .bss.regB      0x2000026c        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000026c                regB
- *fill*         0x20000272        0x2 
- .bss.regA      0x20000274        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000274                regA
+                0x20000271        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.prevSync  0x20000272        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ *fill*         0x20000273        0x1 
+ .bss.ann       0x20000274        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000274                ann
+ *fill*         0x20000276        0x2 
+ .bss.regC      0x20000278        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000278                regC
+ *fill*         0x2000027e        0x2 
+ .bss.regB      0x20000280        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000280                regB
+ *fill*         0x20000286        0x2 
+ .bss.regA      0x20000288        0x6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000288                regA
  .bss.frameReady
-                0x2000027a        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000027a                frameReady
+                0x2000028e        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000028e                frameReady
  .bss.payloadBytesGot
-                0x2000027b        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000027b                payloadBytesGot
+                0x2000028f        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000028f                payloadBytesGot
  .bss.payloadBytesExpected
-                0x2000027c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000027c                payloadBytesExpected
+                0x20000290        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000290                payloadBytesExpected
  .bss.lastDataByte
-                0x2000027d        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000027d                lastDataByte
- .bss.lastCmd   0x2000027e        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000027e                lastCmd
+                0x20000291        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000291                lastDataByte
+ .bss.lastCmd   0x20000292        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000292                lastCmd
  .bss.syncLowCount
-                0x20000280        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000280                syncLowCount
+                0x20000294        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000294                syncLowCount
  .bss.syncHighCount
-                0x20000284        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000284                syncHighCount
+                0x20000298        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x20000298                syncHighCount
  .bss.lastBitOnes
-                0x20000288        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000288                lastBitOnes
- .bss.lastSync  0x2000028c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000028c                lastSync
- .bss.lastBit   0x2000028d        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000028d                lastBit
- *fill*         0x2000028e        0x2 
- .bss.INAcount  0x20000290        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000290                INAcount
- .bss.ISAcount  0x20000294        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000294                ISAcount
- .bss.O2Count   0x20000298        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x20000298                O2Count
- .bss.syncState
-                0x2000029c        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x2000029c                syncState
- *fill*         0x2000029d        0x1 
- .bss.inaIndex  0x2000029e        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .bss.isaIndex  0x200002a0        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000029c        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x2000029c                lastBitOnes
+ .bss.lastSync  0x200002a0        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002a0                lastSync
+ .bss.lastBit   0x200002a1        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002a1                lastBit
  *fill*         0x200002a2        0x2 
+ .bss.INAcount  0x200002a4        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002a4                INAcount
+ .bss.ISAcount  0x200002a8        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002a8                ISAcount
+ .bss.O2Count   0x200002ac        0x4 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002ac                O2Count
+ .bss.syncState
+                0x200002b0        0x1 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002b0                syncState
+ *fill*         0x200002b1        0x1 
+ .bss.inaIndex  0x200002b2        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .bss.isaIndex  0x200002b4        0x2 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ *fill*         0x200002b6        0x2 
  .bss.inaBuffer
-                0x200002a4      0x100 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200002a4                inaBuffer
+                0x200002b8      0x100 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200002b8                inaBuffer
  .bss.isaBuffer
-                0x200003a4      0x100 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
-                0x200003a4                isaBuffer
- .bss.uwTick    0x200004a4        0x4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x200004a4                uwTick
- .bss.__sf      0x200004a8      0x138 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x200004a8                __sf
- .bss.errno     0x200005e0        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
-                0x200005e0                errno
+                0x200003b8      0x100 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x200003b8                isaBuffer
+ .bss.uwTick    0x200004b8        0x4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x200004b8                uwTick
+ .bss.__sf      0x200004bc      0x138 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x200004bc                __sf
+ .bss.errno     0x200005f4        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+                0x200005f4                errno
  .bss.__lock___malloc_recursive_mutex
-                0x200005e4        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x200005e4                __lock___malloc_recursive_mutex
- *fill*         0x200005e5        0x3 
+                0x200005f8        0x1 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x200005f8                __lock___malloc_recursive_mutex
+ *fill*         0x200005f9        0x3 
  .bss.__malloc_sbrk_start
-                0x200005e8        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x200005e8                __malloc_sbrk_start
+                0x200005fc        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x200005fc                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x200005ec        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x200005ec                __malloc_free_list
+                0x20000600        0x4 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x20000600                __malloc_free_list
  *(COMMON)
-                0x200005f0                        . = ALIGN (0x4)
-                0x200005f0                        _ebss = .
-                0x200005f0                        __bss_end__ = _ebss
+                0x20000604                        . = ALIGN (0x4)
+                0x20000604                        _ebss = .
+                0x20000604                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200005f0      0x600 load address 0x08004ba0
-                0x200005f0                        . = ALIGN (0x8)
+                0x20000604      0x604 load address 0x08004c80
+                0x20000608                        . = ALIGN (0x8)
+ *fill*         0x20000604        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x200005f0                        PROVIDE (_end = .)
-                0x200007f0                        . = (. + _Min_Heap_Size)
- *fill*         0x200005f0      0x200 
-                0x20000bf0                        . = (. + _Min_Stack_Size)
- *fill*         0x200007f0      0x400 
-                0x20000bf0                        . = ALIGN (0x8)
+                0x20000608                        PROVIDE (_end = .)
+                0x20000808                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000608      0x200 
+                0x20000c08                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000808      0x400 
+                0x20000c08                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -7085,222 +7136,228 @@ LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/no
  .ARM.attributes
                 0x00000449       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x00000476       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+                0x00000476       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
  .ARM.attributes
-                0x000004a3       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+                0x000004a3       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
  .ARM.attributes
-                0x000004d0       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x000004d0       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
  .ARM.attributes
-                0x000004fd       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+                0x000004fd       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
  .ARM.attributes
-                0x0000052a       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x0000052a       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
  .ARM.attributes
-                0x00000557       0x17 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
+                0x00000557       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
  .ARM.attributes
-                0x0000056e       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+                0x00000584       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
  .ARM.attributes
-                0x0000059b       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x000005b1       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
  .ARM.attributes
-                0x000005c8       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x000005de       0x17 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strlen.o)
  .ARM.attributes
-                0x000005f5       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x000005f5       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
  .ARM.attributes
-                0x00000622       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x00000622       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x0000064f       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
+                0x0000064f       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
  .ARM.attributes
-                0x0000067c       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+                0x0000067c       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
  .ARM.attributes
-                0x000006a9       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x000006a9       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x000006d6       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+                0x000006d6       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
  .ARM.attributes
-                0x00000703       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
+                0x00000703       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
-                0x00000730       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
+                0x00000730       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
  .ARM.attributes
-                0x0000075d       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+                0x0000075d       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000078a       0x1d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x0000078a       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
+ .ARM.attributes
+                0x000007b7       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
+ .ARM.attributes
+                0x000007e4       0x2d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000811       0x1d C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(BluePill_Project elf32-littlearm)
 LOAD linker stubs
 LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libc.a
 LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libm.a
 LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x13a5f
- .debug_info    0x00000000      0xa30 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_info    0x00000a30      0x2ff CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_info    0x00000d2f      0x62b CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000135a     0x1989 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_info    0x00002ce3     0x3109 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_info    0x00005dec     0x1374 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_info    0x00007160      0x8cc CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_info    0x00007a2c      0x1f8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00007c24      0x4df CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x00008103      0x175 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00008278      0x22a CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x000084a2     0x161a CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_info    0x00009abc      0x7a6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x0000a262      0xcdd CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x0000af3f      0x7f6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x0000b735      0x608 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x0000bd3d      0x9cb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x0000c708     0x1c8c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_info    0x0000e394     0x3beb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x00011f7f     0x1ab0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x00013a2f       0x30 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+.debug_info     0x00000000    0x141b6
+ .debug_info    0x00000000     0x102f CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_info    0x0000102f      0x2ff CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_info    0x0000132e      0x62b CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_info    0x00001959     0x1989 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_info    0x000032e2     0x34bc CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_info    0x0000679e     0x110c CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_info    0x000078aa      0x8cc CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_info    0x00008176      0x1f8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000836e      0x4df CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000884d      0x175 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x000089c2      0x22a CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00008bec     0x1627 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_info    0x0000a213      0x7a6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x0000a9b9      0xcdd CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x0000b696      0x7f6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x0000be8c      0x608 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x0000c494      0x9cb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x0000ce5f     0x1c8c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_info    0x0000eaeb     0x3beb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x000126d6     0x1ab0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x00014186       0x30 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
-.debug_abbrev   0x00000000     0x2c2f
- .debug_abbrev  0x00000000      0x26a CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_abbrev  0x0000026a      0x11b CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x00000385      0x175 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x000004fa      0x1d6 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_abbrev  0x000006d0      0x3ec CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_abbrev  0x00000abc      0x31f CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000ddb      0x20b CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x00000fe6       0xef CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x000010d5      0x1c1 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001296       0xec CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x00001382      0x145 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x000014c7      0x365 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_abbrev  0x0000182c      0x22f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x00001a5b      0x36f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x00001dca      0x246 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_abbrev  0x00002010      0x1f9 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x00002209      0x2a2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x000024ab      0x27e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_abbrev  0x00002729      0x272 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_abbrev  0x0000299b      0x270 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_abbrev  0x00002c0b       0x24 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+.debug_abbrev   0x00000000     0x2c58
+ .debug_abbrev  0x00000000      0x2d3 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_abbrev  0x000002d3      0x11b CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x000003ee      0x175 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x00000563      0x1d6 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_abbrev  0x00000739      0x3d8 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_abbrev  0x00000b11      0x2f3 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000e04      0x20b CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x0000100f       0xef CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x000010fe      0x1c1 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x000012bf       0xec CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x000013ab      0x145 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x000014f0      0x365 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_abbrev  0x00001855      0x22f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x00001a84      0x36f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x00001df3      0x246 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_abbrev  0x00002039      0x1f9 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00002232      0x2a2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x000024d4      0x27e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_abbrev  0x00002752      0x272 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_abbrev  0x000029c4      0x270 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x00002c34       0x24 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
 .debug_loclists
-                0x00000000     0x84f2
+                0x00000000     0x86c0
  .debug_loclists
-                0x00000000      0x132 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x00000000      0x1f6 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_loclists
-                0x00000132      0x10e CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x000001f6      0x10e CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .debug_loclists
-                0x00000240      0x67f CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x00000304      0x784 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .debug_loclists
-                0x000008bf       0x2b CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x00000a88       0x2b CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .debug_loclists
-                0x000008ea       0x5c CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x00000ab3       0x5c CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
  .debug_loclists
-                0x00000946       0x17 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x00000b0f       0x17 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_loclists
-                0x0000095d       0x52 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+                0x00000b26       0x52 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
  .debug_loclists
-                0x000009af       0xb7 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x00000b78       0xb7 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_loclists
-                0x00000a66      0x5f3 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x00000c2f      0x5f8 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
  .debug_loclists
-                0x00001059       0xe1 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00001227       0xe1 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_loclists
-                0x0000113a      0x530 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00001308      0x530 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_loclists
-                0x0000166a      0x562 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00001838      0x562 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_loclists
-                0x00001bcc      0x318 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x00001d9a      0x318 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_loclists
-                0x00001ee4      0x42e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x000020b2      0x42e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_loclists
-                0x00002312     0x1685 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x000024e0     0x1685 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_loclists
-                0x00003997     0x37c3 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00003b65     0x37c3 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_loclists
-                0x0000715a     0x1398 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00007328     0x1398 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 
-.debug_aranges  0x00000000      0xe98
+.debug_aranges  0x00000000      0xed0
  .debug_aranges
-                0x00000000       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x00000000       0x68 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_aranges
-                0x00000050       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+                0x00000068       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
  .debug_aranges
-                0x00000070       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+                0x00000088       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x00000090       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x000000a8       0x50 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .debug_aranges
-                0x000000e0      0x1a8 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x000000f8      0x1c8 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .debug_aranges
-                0x00000288       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x000002c0       0x48 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x000002d0       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x00000308       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
  .debug_aranges
-                0x00000300       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x00000338       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x00000320       0x80 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x00000358       0x80 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x000003a0       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+                0x000003d8       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
  .debug_aranges
-                0x000003c0       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x000003f8       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x000003e8       0x78 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x00000420       0x78 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
  .debug_aranges
-                0x00000460       0xe0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00000498       0xe0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
-                0x00000540       0xc0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00000578       0xc0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000600       0x80 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00000638       0x80 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_aranges
-                0x00000680       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x000006b8       0x58 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_aranges
-                0x000006d8       0x90 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00000710       0x90 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000768      0x1d0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x000007a0      0x1d0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_aranges
-                0x00000938      0x3d0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00000970      0x3d0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_aranges
-                0x00000d08      0x168 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00000d40      0x168 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_aranges
-                0x00000e70       0x28 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+                0x00000ea8       0x28 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
 .debug_rnglists
-                0x00000000      0xbb5
+                0x00000000      0xc0d
  .debug_rnglists
-                0x00000000       0x7b CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                0x00000000       0xaa CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_rnglists
-                0x0000007b       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+                0x000000aa       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
  .debug_rnglists
-                0x0000008e       0x14 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+                0x000000bd       0x14 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
  .debug_rnglists
-                0x000000a2       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+                0x000000d1       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
  .debug_rnglists
-                0x000000da      0x157 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+                0x00000109      0x170 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
  .debug_rnglists
-                0x00000231       0x32 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+                0x00000279       0x32 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x00000263       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+                0x000002ab       0x20 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
  .debug_rnglists
-                0x00000283       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x000002cb       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_rnglists
-                0x00000296       0x5b CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+                0x000002de       0x5b CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_rnglists
-                0x000002f1       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+                0x00000339       0x13 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
  .debug_rnglists
-                0x00000304       0x1a CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0000034c       0x1a CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_rnglists
-                0x0000031e       0xb6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+                0x00000366       0xc6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
  .debug_rnglists
-                0x000003d4       0xa3 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0000042c       0xa3 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_rnglists
-                0x00000477       0x8b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x000004cf       0x8b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_rnglists
-                0x00000502       0x5e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x0000055a       0x5e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_rnglists
-                0x00000560       0x3f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x000005b8       0x3f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_rnglists
-                0x0000059f       0x7d CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x000005f7       0x7d CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_rnglists
-                0x0000061c      0x168 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x00000674      0x168 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_rnglists
-                0x00000784      0x2fe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x000007dc      0x2fe CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_rnglists
-                0x00000a82      0x11a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00000ada      0x11a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_rnglists
-                0x00000b9c       0x19 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+                0x00000bf4       0x19 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
-.debug_macro    0x00000000    0x18cbc
+.debug_macro    0x00000000    0x18cf2
  .debug_macro   0x00000000      0x2d9 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_macro   0x000002d9      0xac0 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_macro   0x00000d99      0x221 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
@@ -7339,103 +7396,103 @@ LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/no
  .debug_macro   0x000150cd      0x8ed CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_macro   0x000159ba       0x83 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
  .debug_macro   0x00015a3d       0xdc CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015b19      0x116 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015c2f       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015c51       0x7b CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015ccc       0x24 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015cf0       0x3c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015d2c       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00015d60      0x370 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000160d0       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000160e6       0x4a CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016130       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016164       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016174       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000161cc      0x1e5 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000163b1       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000163c1       0x3c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000163fd       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016419       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016429       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x00016445       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x0001645b      0x170 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_macro   0x000165cb      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_macro   0x00016782      0x1ce CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_macro   0x00016950      0x1c8 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_macro   0x00016b18      0x2a7 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_macro   0x00016dbf       0xe2 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_macro   0x00016ea1      0x111 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_macro   0x00016fb2      0x384 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x00017336       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x0001738e       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x000173a4       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x000173ba       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x000173d0       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x000173f2       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x00017408       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x0001741e       0x29 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_macro   0x00017447      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_macro   0x000175fe      0x1ad CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_macro   0x000177ab      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_macro   0x00017962       0xff CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00017a61      0x23c CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00017c9d       0xc8 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_macro   0x00017d65      0x1bd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_macro   0x00017f22      0x1c2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_macro   0x000180e4      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_macro   0x00018282      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_macro   0x00018420      0x209 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_macro   0x00018629      0x1b0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_macro   0x000187d9      0x1a6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_macro   0x0001897f      0x19f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_macro   0x00018b1e      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_macro   0x00015b19      0x12b CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015c44       0x2e CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015c72       0x7b CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015ced       0x24 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015d11       0x3c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015d4d       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00015d81      0x370 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x000160f1       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00016107       0x4a CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00016151       0x34 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00016185       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00016195       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x000161ed      0x1e5 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x000163d2       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x000163e2       0x3c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x0001641e       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x0001643a       0x10 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x0001644a       0x1c CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x00016466       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x0001647c      0x170 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_macro   0x000165ec      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_macro   0x000167a3      0x1ce CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x00016971      0x1c8 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_macro   0x00016b39      0x2a7 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_macro   0x00016de0       0xe2 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_macro   0x00016ec2      0x126 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_macro   0x00016fe8      0x384 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001736c       0x58 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173c4       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173da       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173f0       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017406       0x22 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017428       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001743e       0x16 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017454       0x29 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001747d      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_macro   0x00017634      0x1ad CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_macro   0x000177e1      0x1b7 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_macro   0x00017998       0xff CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00017a97      0x23c CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00017cd3       0xc8 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_macro   0x00017d9b      0x1bd CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_macro   0x00017f58      0x1c2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_macro   0x0001811a      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_macro   0x000182b8      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_macro   0x00018456      0x209 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_macro   0x0001865f      0x1b0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_macro   0x0001880f      0x1a6 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_macro   0x000189b5      0x19f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_macro   0x00018b54      0x19e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 
-.debug_line     0x00000000    0x1285c
- .debug_line    0x00000000      0x94d CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_line    0x0000094d      0x542 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_line    0x00000e8f      0x6cb CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000155a      0x7fd CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_line    0x00001d57     0x10a7 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_line    0x00002dfe      0x85b CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_line    0x00003659      0x6fa CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_line    0x00003d53      0x552 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x000042a5      0x66b CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x00004910      0x288 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_line    0x00004b98      0x371 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00004f09     0x10f6 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_line    0x00005fff      0x85a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00006859      0xa3f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00007298      0xe49 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x000080e1      0x94b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00008a2c      0xfbc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x000099e8     0x2778 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_line    0x0000c160     0x4938 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x00010a98     0x1d4b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x000127e3       0x79 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+.debug_line     0x00000000    0x12be6
+ .debug_line    0x00000000      0xbe2 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_line    0x00000be2      0x542 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_line    0x00001124      0x6cb CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_line    0x000017ef      0x7fd CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_line    0x00001fec     0x1183 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_line    0x0000316f      0x84e CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_line    0x000039bd      0x6fa CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_line    0x000040b7      0x552 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00004609      0x66b CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x00004c74      0x288 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x00004efc      0x371 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x0000526d     0x111c CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_line    0x00006389      0x85a CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x00006be3      0xa3f CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x00007622      0xe49 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x0000846b      0x94b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00008db6      0xfbc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00009d72     0x2778 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_line    0x0000c4ea     0x4938 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x00010e22     0x1d4b CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x00012b6d       0x79 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
-.debug_str      0x00000000    0x8b047
- .debug_str     0x00000000    0x8b047 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
-                              0x868c0 (size before relaxing)
- .debug_str     0x0008b047    0x83455 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_str     0x0008b047    0x8387f CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_str     0x0008b047    0x835b4 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_str     0x0008b047    0x87214 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_str     0x0008b047    0x87553 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_str     0x0008b047    0x83631 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_str     0x0008b047    0x8317f CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_str     0x0008b047    0x83491 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_str     0x0008b047     0x70c6 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_str     0x0008b047    0x5472b CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_str     0x0008b047    0x83cbf CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_str     0x0008b047    0x835f2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_str     0x0008b047    0x8353e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_str     0x0008b047    0x83268 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_str     0x0008b047    0x83245 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_str     0x0008b047    0x832ee CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_str     0x0008b047    0x837eb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_str     0x0008b047    0x842e0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_str     0x0008b047    0x83afc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_str     0x0008b047       0x80 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
+.debug_str      0x00000000    0x8b149
+ .debug_str     0x00000000    0x8b149 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+                              0x86983 (size before relaxing)
+ .debug_str     0x0008b149    0x83455 CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_str     0x0008b149    0x8387b CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_str     0x0008b149    0x835b0 CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_str     0x0008b149    0x87263 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_str     0x0008b149    0x87577 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_str     0x0008b149    0x83631 CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_str     0x0008b149    0x8317f CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x0008b149    0x83491 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_str     0x0008b149     0x70c6 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0008b149    0x5472b CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_str     0x0008b149    0x83cca CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_str     0x0008b149    0x835f2 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x0008b149    0x8353e CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x0008b149    0x83268 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x0008b149    0x83245 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x0008b149    0x832ee CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x0008b149    0x837eb CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x0008b149    0x842e0 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x0008b149    0x83afc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x0008b149       0x80 CMakeFiles/BluePill_Project.dir/startup_stm32f103c8tx.S.obj
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
@@ -7460,45 +7517,48 @@ LOAD C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/no
  .comment       0x00000045       0x46 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .comment       0x00000045       0x46 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 
-.debug_frame    0x00000000     0x2c90
- .debug_frame   0x00000000       0xf4 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
- .debug_frame   0x000000f4       0x2c CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
- .debug_frame   0x00000120       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
- .debug_frame   0x00000158       0xcc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
- .debug_frame   0x00000224      0x51c CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
- .debug_frame   0x00000740       0x98 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
- .debug_frame   0x000007d8       0x6c CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
- .debug_frame   0x00000844       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x0000086c       0xf8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x00000964       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
- .debug_frame   0x0000098c       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000009bc      0x134 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
- .debug_frame   0x00000af0      0x1cc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x00000cbc      0x19c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x00000e58      0x144 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_frame   0x00000f9c       0xe4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x00001080      0x184 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00001204      0x5ac CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_frame   0x000017b0      0xb14 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_frame   0x000022c4      0x418 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_frame   0x000026dc      0x144 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00002820       0x74 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sprintf.o)
- .debug_frame   0x00002894       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
- .debug_frame   0x000028b4       0x38 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
- .debug_frame   0x000028ec       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_frame   0x0000290c       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
- .debug_frame   0x00002938       0xb0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
- .debug_frame   0x000029e8       0x38 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
- .debug_frame   0x00002a20       0x50 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
- .debug_frame   0x00002a70       0x30 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
- .debug_frame   0x00002aa0       0x90 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_frame   0x00002b30       0x60 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_frame   0x00002b90       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
- .debug_frame   0x00002bb8       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .debug_frame   0x00002be4       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
- .debug_frame   0x00002c0c       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00002c34       0x3c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
- .debug_frame   0x00002c70       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
+.debug_frame    0x00000000     0x2dd0
+ .debug_frame   0x00000000      0x150 CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj
+ .debug_frame   0x00000150       0x2c CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj
+ .debug_frame   0x0000017c       0x38 CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x000001b4       0xcc CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj
+ .debug_frame   0x00000280      0x590 CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj
+ .debug_frame   0x00000810       0x98 CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj
+ .debug_frame   0x000008a8       0x6c CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj
+ .debug_frame   0x00000914       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x0000093c       0xf8 CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x00000a34       0x28 CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj
+ .debug_frame   0x00000a5c       0x30 CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00000a8c      0x138 CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj
+ .debug_frame   0x00000bc4      0x1cc CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000d90      0x19c CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x00000f2c      0x144 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_frame   0x00001070       0xe4 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x00001154      0x184 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x000012d8      0x5ac CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_frame   0x00001884      0xb14 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_frame   0x00002398      0x418 CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_frame   0x000027b0      0x144 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x000028f4       0x74 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sprintf.o)
+ .debug_frame   0x00002968       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00002988       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strchr.o)
+ .debug_frame   0x000029a8       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strstr.o)
+ .debug_frame   0x000029d4       0x38 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_frame   0x00002a0c       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_frame   0x00002a2c       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00002a58       0xb0 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_frame   0x00002b08       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-strcpy.o)
+ .debug_frame   0x00002b28       0x38 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_frame   0x00002b60       0x50 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00002bb0       0x30 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00002be0       0x90 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_frame   0x00002c70       0x60 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002cd0       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memmove.o)
+ .debug_frame   0x00002cf8       0x2c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x00002d24       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_frame   0x00002d4c       0x28 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00002d74       0x3c C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-reallocr.o)
+ .debug_frame   0x00002db0       0x20 C:/ARM_Toolchain/arm-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg_nano.a(libc_a-msizer.o)
 
 .debug_line_str
                 0x00000000      0x14b
